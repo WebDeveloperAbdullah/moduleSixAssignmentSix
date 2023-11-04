@@ -1,0 +1,11 @@
+CREATE TABLE `product_table`(
+    `product_id` BIGINT(20) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    `category_id` BIGINT(20) UNSIGNED NOT NULL,
+    `product_name` VARCHAR(50) NOT NULL,
+    `product_description` VARCHAR(50) NOT NULL,
+    `product_price` DECIMAL(50) NOT NULL,
+    `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP(),
+    `update_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP() ON UPDATE CURRENT_TIMESTAMP(),
+    FOREIGN KEY (`category_id`) REFERENCES `category_table` (`category_id`) ON DELETE RESTRICT ON UPDATE CASCADE
+
+);
