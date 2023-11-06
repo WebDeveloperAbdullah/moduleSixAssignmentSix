@@ -1,0 +1,22 @@
+body{
+margin: 0px;
+padding: 0px;
+}
+
+#min_body h1{
+    text-align: center;
+}
+#form_body {
+    width: 50%;
+    margin: auto;
+}
+#table_body{
+    width: 50%;
+    margin: auto;
+}
+
+#min_bodyC{
+    width: 100%;
+    margin: auto;
+
+}
